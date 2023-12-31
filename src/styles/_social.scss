@@ -1,0 +1,27 @@
+@use 'variaveis';
+
+#social {
+    background-color: variaveis.$corTitulos ;
+    text-align: center;
+    margin-top: 25px;
+
+
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &__links {
+
+        margin-top: 15px;
+
+
+        &__item {
+            margin-top: 15px;
+        }
+        
+    }
+}

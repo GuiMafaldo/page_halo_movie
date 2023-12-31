@@ -1,0 +1,77 @@
+@use 'variaveis';
+
+
+#contato {
+    text-align: center;
+    margin-top: 35px;
+    color: variaveis.$corTitulos ;
+
+
+
+    @media(max-width: 767px) {
+
+        .contato {
+
+
+            &__form {
+
+                textarea{
+                    margin-top: 10px;
+                }
+            }
+
+        }
+    }
+
+}
+
+.contato {
+    display: block;
+    margin-top: 35px;
+    
+
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        max-width: 350px;
+
+
+        input {
+            padding: 6px;
+            border: none;
+            border-bottom: 1px solid #000;
+            cursor: pointer;
+        }
+        
+
+
+        label {
+            text-align: left;
+            margin: 5px 2px;
+        }
+    }
+
+    textarea{
+        resize: none;
+        height: 100px;
+        margin-top: 6px;
+        cursor: pointer;
+    }
+
+
+
+    button {
+        max-width: 100px;
+        margin-left: 130px;
+        background-color: variaveis.$corTitulos;
+        padding: 8px;
+        margin-top: 9px;
+        margin-bottom: 15px;
+        border: 1px solid #000;
+        border-radius: 2px;
+        font-weight: bold;
+    
+    }
+
+}
